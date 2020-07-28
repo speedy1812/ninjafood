@@ -34,6 +34,9 @@ group :development, :test do
 end
 
 group :development do
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'rack-livereload', '~> 0.3.17'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'

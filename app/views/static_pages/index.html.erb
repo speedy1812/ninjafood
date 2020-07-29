@@ -42,11 +42,14 @@
 
       <div class="mt-8">
         <!-- cards go here -->
-        <div class="overflow-hidden bg-white rounded shadow-md">
+        <div class="relative overflow-hidden bg-white rounded shadow-md">
           <%= image_tag("stew.jpg", alt: "Stew", class: "w-full h-32 sm:h-48 object-cover") %>
           <div>
             <span class="font-bold">5 Bean Chili Stew</span>
             <span class="block text-sm text-gray-500">Recipe by Mario</span>
+          </div>
+          <div class="absolute top-0 p-2 mt-2 ml-2 text-xs font-bold uppercase rounded-full bg-secondary-100 text-secondary-200">
+            <span>25 mins</span>
           </div>
         </div>
       </div>

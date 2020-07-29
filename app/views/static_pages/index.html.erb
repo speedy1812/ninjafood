@@ -1,5 +1,5 @@
-<div><!-- content wrapper -->
-  <div>
+<div class="grid md:grid-cols-3"><!-- content wrapper -->
+  <div class="md:col-span-1">
     <nav>
       <div>
         <h1 class="p-4 font-bold uppercase border-b border-gray-100">
@@ -26,7 +26,7 @@
     </nav>
   </div><!-- end nav -->
 
-  <main class="px-16 py-6 bg-gray-100">
+  <main class="px-16 py-6 bg-gray-100 md:col-span-2">
     <div class="flex justify-center md:justify-end">
       <a href="#" class="text-primary">Log in</a>
       <a href="#" class="ml-2 text-primary">Sign up</a>
@@ -40,15 +40,37 @@
     <div>
       <h4 class="pb-2 mt-12 font-bold border-b border-gray-200">Latest Recipes</h4>
 
-      <div class="mt-8">
+      <div class="mt-8 grid lg:grid-cols-3 gap-10">
         <!-- cards go here -->
-        <div class="relative overflow-hidden bg-white rounded shadow-md">
+        <div class="card">
           <%= image_tag("stew.jpg", alt: "Stew", class: "w-full h-32 sm:h-48 object-cover") %>
           <div>
             <span class="font-bold">5 Bean Chili Stew</span>
             <span class="block text-sm text-gray-500">Recipe by Mario</span>
           </div>
-          <div class="absolute top-0 p-2 mt-2 ml-2 text-xs font-bold uppercase rounded-full bg-secondary-100 text-secondary-200">
+          <div class="badge">
+            <span>25 mins</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <%= image_tag("noodles.jpg", alt: "noodles", class: "w-full h-32 sm:h-48 object-cover") %>
+          <div>
+            <span class="font-bold">Veg Noodles</span>
+            <span class="block text-sm text-gray-500">Recipe by Mario</span>
+          </div>
+          <div class="badge">
+            <span>25 mins</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <%= image_tag("curry.jpg", alt: "curry", class: "w-full h-32 sm:h-48 object-cover") %>
+          <div>
+            <span class="font-bold">Tofu Curry</span>
+            <span class="block text-sm text-gray-500">Recipe by Mario</span>
+          </div>
+          <div class="badge">
             <span>25 mins</span>
           </div>
         </div>
